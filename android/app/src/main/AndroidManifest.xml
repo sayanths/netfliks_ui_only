@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.netfliks_bloc">
+    <uses-permission android:name="android.permission.INTERNET" />
+ <application ...
+</manifest>
+
    <application
         android:label="netfliks_bloc"
         android:name="${applicationName}"
