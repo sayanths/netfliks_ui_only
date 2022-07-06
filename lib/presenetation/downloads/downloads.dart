@@ -7,30 +7,36 @@ import 'package:netfliks_bloc/presenetation/appbar_widget.dart';
 class Downloads extends StatelessWidget {
   Downloads({Key? key}) : super(key: key);
 
-  final _widgetList = [];
+  final _widgetList = [
+    const SmartDownloads(),
+    kHeight,
+    Section2(),
+    const Section3(),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: AppBarWidgets(
             title: 'Downloads',
           )),
-      body: ListView(
-        children: [
-          kHeight,
-          _smartDownloads(),
-          kHeight,
-          Section2(),
-          Section3(),
-        ],
+      body: ListView.separated(
+        padding: const EdgeInsets.all(10),
+        itemBuilder: ((context, index) => _widgetList[index]),
+        separatorBuilder: (ctx,index)=>const SizedBox(height: 25,),
+        itemCount: _widgetList.length,
       ),
     );
   }
+}
 
-  Row _smartDownloads() {
+class SmartDownloads extends StatelessWidget {
+  const SmartDownloads({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return Row(
       children: const [
         Icon(
@@ -39,7 +45,7 @@ class Downloads extends StatelessWidget {
         ),
         Text(
           "Smart Downloads",
-          style: TextStyle(color: white),
+          style: TextStyle(color: white,fontSize: 16),
         )
       ],
     );
