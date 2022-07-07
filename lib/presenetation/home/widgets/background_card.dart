@@ -9,8 +9,8 @@ class BackgroundCard extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: double.infinity,
-          height: MediaQuery.of(context).size.height / 1.5,
+        
+          height: MediaQuery.of(context).size.height / 2,
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: NetworkImage(

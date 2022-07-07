@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:netfliks_bloc/core/constants.dart';
+import 'package:netfliks_bloc/core/colors.dart';
+
 
 class HommeCard extends StatelessWidget {
   const HommeCard({

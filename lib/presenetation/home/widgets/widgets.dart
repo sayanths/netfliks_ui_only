@@ -2,7 +2,7 @@ import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 import 'package:netfliks_bloc/core/colors.dart';
 
-import 'package:netfliks_bloc/core/constants.dart';
+
 
 class Top10Shows extends StatelessWidget {
   final int index;

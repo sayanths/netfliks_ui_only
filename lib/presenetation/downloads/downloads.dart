@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:netfliks_bloc/core/colors.dart';
-import 'package:netfliks_bloc/core/constants.dart';
+
 import 'package:netfliks_bloc/presenetation/appbar_widget.dart';
 
 class Downloads extends StatelessWidget {

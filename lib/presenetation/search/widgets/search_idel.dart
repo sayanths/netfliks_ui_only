@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netfliks_bloc/core/colors.dart';
-import 'package:netfliks_bloc/core/constants.dart';
+
 import 'package:netfliks_bloc/presenetation/search/widgets/title.dart';
 
 const imageUrl =
